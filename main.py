@@ -62,7 +62,7 @@ def _repair_svg_issues(svg_content: str) -> str:
     incomplete_patterns = [
         r'<path[^>]*$',  # Incomplete path tags
         r'<[a-zA-Z][^>]*$',  # Any incomplete tag
-        r'<[^>]*\s[a-zA-Z-]+=["\''][^"\']*$',  # Incomplete attributes
+        r'<[^>]*\s[a-zA-Z-]+=["\'"][^"\']*$',  # Incomplete attributes
     ]
     
     for pattern in incomplete_patterns:
